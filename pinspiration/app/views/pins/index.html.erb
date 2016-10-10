@@ -1,1 +1,8 @@
-<h2> Artist </h2>
+<h2> Pin </h2>
+
+<ul>
+  <%= @pin.each do |pin| %>
+  <li> <%= pin.title %> </li>
+  <li> <img src="<% pin.img_url%>">
+    <% end %>
+</ul>
